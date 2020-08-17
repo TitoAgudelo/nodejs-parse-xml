@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Parse XML using NodeJS
+  p Movies Information
+  table
+    tr
+      th Id
+      th Title
+      th Release Date
+    each avenger, index in avengers
+      tr
+        td #{avenger['id'][0]}
+        td #{avenger['title'][0]}
+        td #{avenger['release_date'][0]}
